@@ -50,3 +50,46 @@ h3 .content-title-en,
 h2 {
     font-size: 3rem;
 }
+
+/*--------------Header--------------*/
+
+
+#header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+
+#header h1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.2em;
+}
+
+#header h1 a {
+    color: #eb6100;
+}
+
+#header #pc-nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+#header #pc-nav li a {
+    display: block;
+    padding: 0 15px;
+    transition: all 0.3s;
+}
+
+#header #pc-nav li a:hover {
+    color: #eb6100;
+}
