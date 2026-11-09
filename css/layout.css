@@ -103,17 +103,24 @@ h2 {
     position: fixed;
     width: 90%;
     height: 90%;
+    top: 0;
     left: 5%;
     padding-top: 100px;
-    background: url(/img/main.jpg) no-repeat center;
+    background: url(../img/main.jpg) no-repeat center;
     background-size: cover;
 }
 
 #top-main .top-lead {
-    position: fixed;
-    bottom: 10%;
-    left: 5%;
+    position: absolute;
+    bottom: 0;
     font-size: 3rem;
     font-weight: bold;
     line-height: 1.5;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    margin-top: 90vh;
+    background: #fff;
 }
