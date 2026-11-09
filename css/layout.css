@@ -96,3 +96,24 @@ h2 {
 #header #pc-nav li a:hover {
     color: #eb6100;
 }
+
+/*--------------Top-Main--------------*/
+
+#top-main {
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    padding-top: 100px;
+    background: url(/img/main.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#top-main .top-lead {
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
