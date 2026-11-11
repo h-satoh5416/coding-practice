@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*--------------スライダー--------------*/
+
+.slider-window {
+    height: 50px;
+    overflow: hidden;
+}
+
+.slider {
+    animation: newsSlider 12s linear infinite;
+}
+
+.slider li {
+    height: 50px;
+}
+
+.slider a {
+    padding: 10px 0;
+}
+
+.slider time {
+    font-size: 0.8rem;
+    color: #777;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+@keyframes newsSlider {
+
+    0%,
+    30% {
+        transform: translateY(0);
+    }
+
+    33%,
+    63% {
+        transform: translateY(-50px);
+    }
+
+    66%,
+    97% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(-150px);
+    }
+}
