@@ -142,3 +142,58 @@ h2 {
 #topics h2 {
     font-size: 1.5rem;
 }
+
+/*--------------Vision--------------*/
+
+#vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#vision .img {
+    width: 40%;
+    height: 590px;
+}
+
+#vision .img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#vision .content {
+    width: 50%;
+    text-align: right;
+}
+
+#vision .content h2 {
+    margin-bottom: 30px;
+    color: #eb6100;
+}
+
+#vision .content p {
+    margin-bottom: 50px;
+    line-height: 2;
+}
+
+#vision .content .vision-lead {
+    margin-bottom: 90px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #eb6100;
+    position: relative;
+}
+
+#vision .content .vision-lead::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 12em;
+    height: 3px;
+    background-color: #eb6100;
+}
