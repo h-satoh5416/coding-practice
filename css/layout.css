@@ -124,3 +124,21 @@ h2 {
     margin-top: 90vh;
     background: #fff;
 }
+
+#main-area {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/*--------------Topics--------------*/
+
+#topics {
+    border-left: 3px solid #333;
+    padding-left: 20px;
+    margin-bottom: 60px;
+}
+
+#topics h2 {
+    font-size: 1.5rem;
+}
