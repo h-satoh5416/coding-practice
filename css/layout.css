@@ -213,7 +213,7 @@ h2 {
     position: relative;
 }
 
-#service .service-area:nth-child(2) {
+#service .service-area:nth-child(2n) {
     flex-direction: row-reverse;
 }
 
