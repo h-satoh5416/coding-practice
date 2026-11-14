@@ -197,3 +197,74 @@ h2 {
     height: 3px;
     background-color: #eb6100;
 }
+
+/*--------------Service--------------*/
+
+#service h2 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#service .service-area {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 300px;
+    position: relative;
+}
+
+#service .service-area:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+#service .service-area::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 23em;
+    background-color: #f3f3f3;
+    top: 20%;
+    right: 10%;
+    z-index: -1;
+}
+
+#service .service-area .img {
+    width: 50%;
+}
+
+#service .service-area .content {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 150px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #ccc;
+    z-index: 1;
+}
+
+#service .service-area .content-area {
+    padding: 40px;
+}
+
+#service .service-area .content h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#service .service-area .content-title-en {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#service .service-area .content-title-ja {
+    display: block;
+    font-size: 1rem;
+}
+
+#service .service-area .content p {
+    margin-bottom: 30px;
+}
