@@ -213,7 +213,7 @@ h2 {
     position: relative;
 }
 
-#service .service-area:nth-child(2n) {
+#service .service-area:nth-of-type(2n+1) {
     flex-direction: row-reverse;
 }
 
@@ -226,6 +226,11 @@ h2 {
     top: 20%;
     right: 10%;
     z-index: -1;
+}
+
+#service .service-area:nth-of-type(2n)::after {
+    left: 10%;
+    right: auto;
 }
 
 #service .service-area .img {
