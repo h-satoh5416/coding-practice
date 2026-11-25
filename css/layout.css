@@ -345,3 +345,79 @@ h2 {
     text-align: center;
     margin-bottom: 100px;
 }
+
+/*--------------Contact--------------*/
+
+#contact {
+    margin-bottom: 100px;
+}
+
+#contact h2 {
+    text-align: center;
+    color: #eb6100;
+    margin-bottom: 100px;
+}
+
+#contact .form-list {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contact .form-list dl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+#contact .form-list dt {
+    width: 30%;
+}
+
+#contact .form-list dd {
+    width: 66%;
+}
+
+#contact .form-list input,
+#contact .form-list textarea {
+    width: 100%;
+    border: solid 1px #666;
+    outline: none;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.85;
+    appearance: none;
+}
+
+#contact .form-list input {
+    height: 50px;
+}
+
+#contact .form-list textarea {
+    height: 200px;
+}
+
+#contact .submit-btn {
+    width: 152px;
+    margin: 0 auto;
+}
+
+#contact .submit-btn input {
+    width: 100%;
+    text-align: center;
+    border: solid 2px #333;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.85;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#contact .submit-btn input:hover {
+    background-color: #333;
+    color: #fff;
+}
