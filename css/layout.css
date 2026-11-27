@@ -391,6 +391,11 @@ h2 {
     appearance: none;
 }
 
+#contact .form-list input:focus,
+#contact .form-list textarea:focus {
+    border-color: #eb6100;
+}
+
 #contact .form-list input {
     height: 50px;
 }
