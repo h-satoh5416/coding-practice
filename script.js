@@ -30,7 +30,7 @@ menu.addEventListener("click", () => {
 });
 
 navi.addEventListener("click", () => {
-    toggleMenu();
+    closeMenu();
 });
 
 function toggleMenu() {
@@ -38,11 +38,7 @@ function toggleMenu() {
     navi.classList.toggle("panelactive");
 };
 
-const naviLinks = document.querySelectorAll("#g-nav a");
-
-naviLinks.forEach(naviLink => {
-    naviLink.addEventListener("click", () => {
-        menu.classList.remove("active");
-        navi.classList.remove("panelactive");
-    });
-});
+function closeMenu() {
+    menu.classList.remove("active");
+    navi.classList.remove("panelactive");
+};
