@@ -8,12 +8,14 @@ accordions.forEach(accordion => {
 
         accordions.forEach(item => {
             item.classList.remove("open");
-            item.nextElementSibling.classList.remove("open");
+            item.closest("h3").nextElementSibling.classList.remove("open");
+            item.setAttribute("aria-expanded", "false");
         });
 
         if (!isOpen) {
             accordion.classList.add("open");
-            accordion.nextElementSibling.classList.add("open");
+            accordion.closest("h3").nextElementSibling.classList.add("open");
+            accordion.setAttribute("aria-expanded", "true");
         }
     });
 });
