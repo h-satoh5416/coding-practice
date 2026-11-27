@@ -1,6 +1,6 @@
 /*------------アコーディオン------------*/
 
-const accordions = document.querySelectorAll(".title");
+const accordions = document.querySelectorAll(".accordion-area .title");
 
 accordions.forEach(accordion => {
     accordion.addEventListener("click", () => {
@@ -8,15 +8,13 @@ accordions.forEach(accordion => {
 
         accordions.forEach(item => {
             item.classList.remove("open");
-            const box = item.nextElementSibling;
-            box.classList.remove("open");
-
-            if (!isOpen) {
-                accordion.classList.add("open");
-                const box = accordion.nextElementSibling;
-                box.classList.add("open");
-            };
+            item.nextElementSibling.classList.remove("open");
         });
+
+        if (!isOpen) {
+            accordion.classList.add("open");
+            accordion.nextElementSibling.classList.add("open");
+        }
     });
 });
 
