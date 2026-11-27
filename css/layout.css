@@ -426,3 +426,25 @@ h2 {
     background-color: #333;
     color: #fff;
 }
+
+/*--------------Footer--------------*/
+
+#footer {
+    position: relative;
+    padding: 100px 0;
+    border-top: solid 1px #333;
+    background-color: #fff;
+    text-align: center;
+}
+
+#footer .footer-logo {
+    margin-bottom: 50px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: #666;
+}
+
+#footer small {
+    font-size: 80%;
+    color: #888;
+}
