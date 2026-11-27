@@ -20,3 +20,29 @@ accordions.forEach(accordion => {
     });
 });
 
+/*------------Menu------------*/
+
+const menu = document.querySelector(".openbtn");
+const navi = document.querySelector("#g-nav");
+
+menu.addEventListener("click", () => {
+    toggleMenu();
+});
+
+navi.addEventListener("click", () => {
+    toggleMenu();
+});
+
+function toggleMenu() {
+    menu.classList.toggle("active");
+    navi.classList.toggle("panelactive");
+};
+
+const naviLinks = document.querySelectorAll("#g-nav a");
+
+naviLinks.forEach(naviLink => {
+    naviLink.addEventListener("click", () => {
+        menu.classList.remove("active");
+        navi.classList.remove("panelactive");
+    });
+});
